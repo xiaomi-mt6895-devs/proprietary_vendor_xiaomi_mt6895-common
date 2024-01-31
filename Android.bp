@@ -8492,74 +8492,82 @@ android_app_import {
 }
 
 dex_import {
+    name: "com.android.hotwordenrollment.common.util",
+    owner: "xiaomi",
+    jars: [
+        "proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
     name: "mediatek-common",
     owner: "xiaomi",
     jars: [
-        "proprietary/system/framework/mediatek-common.jar",
+        "proprietary/system_ext/framework/mediatek-common.jar",
     ],
+    system_ext_specific: true,
 }
 
 dex_import {
     name: "mediatek-framework",
     owner: "xiaomi",
     jars: [
-        "proprietary/system/framework/mediatek-framework.jar",
+        "proprietary/system_ext/framework/mediatek-framework.jar",
     ],
+    system_ext_specific: true,
 }
 
 dex_import {
     name: "mediatek-ims-base",
     owner: "xiaomi",
     jars: [
-        "proprietary/system/framework/mediatek-ims-base.jar",
+        "proprietary/system_ext/framework/mediatek-ims-base.jar",
     ],
+    system_ext_specific: true,
 }
 
 dex_import {
     name: "mediatek-ims-common",
     owner: "xiaomi",
     jars: [
-        "proprietary/system/framework/mediatek-ims-common.jar",
+        "proprietary/system_ext/framework/mediatek-ims-common.jar",
     ],
+    system_ext_specific: true,
 }
 
 dex_import {
     name: "mediatek-ims-extension-plugin",
     owner: "xiaomi",
     jars: [
-        "proprietary/system/framework/mediatek-ims-extension-plugin.jar",
+        "proprietary/system_ext/framework/mediatek-ims-extension-plugin.jar",
     ],
+    system_ext_specific: true,
 }
 
 dex_import {
     name: "mediatek-telecom-common",
     owner: "xiaomi",
     jars: [
-        "proprietary/system/framework/mediatek-telecom-common.jar",
+        "proprietary/system_ext/framework/mediatek-telecom-common.jar",
     ],
+    system_ext_specific: true,
 }
 
 dex_import {
     name: "mediatek-telephony-base",
     owner: "xiaomi",
     jars: [
-        "proprietary/system/framework/mediatek-telephony-base.jar",
+        "proprietary/system_ext/framework/mediatek-telephony-base.jar",
     ],
+    system_ext_specific: true,
 }
 
 dex_import {
     name: "mediatek-telephony-common",
     owner: "xiaomi",
     jars: [
-        "proprietary/system/framework/mediatek-telephony-common.jar",
-    ],
-}
-
-dex_import {
-    name: "com.android.hotwordenrollment.common.util",
-    owner: "xiaomi",
-    jars: [
-        "proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar",
+        "proprietary/system_ext/framework/mediatek-telephony-common.jar",
     ],
     system_ext_specific: true,
 }

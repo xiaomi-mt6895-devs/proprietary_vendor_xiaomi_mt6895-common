@@ -470,6 +470,7 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleRISCV \
     HotwordEnrollmentXGoogleRISCV \
     ImsService \
+    com.android.hotwordenrollment.common.util \
     mediatek-common \
     mediatek-framework \
     mediatek-ims-base \
@@ -478,7 +479,6 @@ PRODUCT_PACKAGES += \
     mediatek-telecom-common \
     mediatek-telephony-base \
     mediatek-telephony-common \
-    com.android.hotwordenrollment.common.util \
     android.hardware.neuralnetworks-shim-service-mtk.xml \
     android.hardware.security.keymint-service.beanpod.xml \
     android.hardware.security.secureclock-service.beanpod.xml \
@@ -553,12 +553,3 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libpq_prot_so \
     vendor_lib64_libpqparamparser_so \
     vendor_lib64_libpqpconfig_so
-
-PRODUCT_BOOT_JARS += \
-    mediatek-common \
-    mediatek-framework \
-    mediatek-ims-base \
-    mediatek-ims-common \
-    mediatek-telecom-common \
-    mediatek-telephony-base \
-    mediatek-telephony-common
