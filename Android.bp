@@ -5186,6 +5186,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libsysenv.so",
             ],
             shared_libs: [
+                "libbase_shim",
                 "liblog",
                 "libbase",
                 "libc++",
@@ -6182,6 +6183,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6895/libneuralnetworks_sl_driver_mtk_prebuilt.so",
             ],
             shared_libs: [
+                "libbase_shim",
                 "libcutils",
                 "liblog",
                 "libnativewindow",
