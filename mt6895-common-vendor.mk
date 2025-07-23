@@ -526,6 +526,7 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleRISCV \
     HotwordEnrollmentXGoogleRISCV \
     ImsService \
+    MtkGbaService \
     mediatek-ims-base \
     mediatek-ims-common \
     mediatek-ims-extension-plugin \
