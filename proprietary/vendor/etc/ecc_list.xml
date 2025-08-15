@@ -613,6 +613,9 @@
 
     <EccEntry Ecc="112" Category="0" Condition="1" Plmn="208 01"/>
     <EccEntry Ecc="911" Category="0" Condition="1" Plmn="208 01"/>
+    <EccEntry Ecc="15" Category="2" Condition="1" Plmn="208 FF"/>
+    <EccEntry Ecc="17" Category="1" Condition="1" Plmn="208 FF"/>
+    <EccEntry Ecc="18" Category="4" Condition="1" Plmn="208 FF"/>
 
     <EccEntry Ecc="112" Category="0" Condition="1" Plmn="732 101"/>
     <EccEntry Ecc="911" Category="0" Condition="1" Plmn="732 101"/>
