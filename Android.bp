@@ -377,36 +377,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "audio.r_submix.mediatek",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/audio.r_submix.mediatek.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libmedia_helper",
-                "libutils",
-                "libnbaio_mono",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "consumerir.common",
     owner: "xiaomi",
     strip: {
@@ -11401,13 +11371,6 @@ install_symlink {
     soc_specific: true,
     installed_location: "lib64/egl/libGLES_mali.so",
     symlink_target: "/vendor/lib64/egl/mt6895/libGLES_mali.so",
-}
-
-install_symlink {
-    name: "vendor_lib64_hw_audio_r_submix_mt6895_so",
-    soc_specific: true,
-    installed_location: "lib64/hw/audio.r_submix.mt6895.so",
-    symlink_target: "/vendor/lib64/hw/audio.r_submix.mediatek.so",
 }
 
 install_symlink {

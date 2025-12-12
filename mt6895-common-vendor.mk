@@ -199,7 +199,6 @@ PRODUCT_PACKAGES += \
     libGLES_mali \
     android.hardware.gnss-impl-mediatek \
     android.hardware.gnss@2.1-impl-mediatek \
-    audio.r_submix.mediatek \
     consumerir.common \
     gatekeeper.beanpod \
     gps.default \
@@ -585,7 +584,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor_bin_hw_android_hardware_graphics_allocator@4_0-service-mediatek \
     vendor_lib64_egl_libGLES_mali_so \
-    vendor_lib64_hw_audio_r_submix_mt6895_so \
     vendor_lib64_hw_android_hardware_graphics_allocator@4_0-impl-mediatek_so \
     vendor_lib64_hw_android_hardware_graphics_mapper@4_0-impl-mediatek_so \
     vendor_lib64_hw_gralloc_common_so \
