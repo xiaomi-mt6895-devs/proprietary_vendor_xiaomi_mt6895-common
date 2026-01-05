@@ -256,9 +256,15 @@ PRODUCT_PACKAGES += \
     libccci_util \
     libcmdl \
     libcmdl_ndk.mtk.vndk \
+    libcodec2_hidl@1.0-v31 \
+    libcodec2_hidl@1.1-v31 \
+    libcodec2_hidl@1.2-v31 \
+    libcodec2_hidl_plugin-v31 \
     libcodec2_mtk_c2store \
     libcodec2_mtk_vdec \
     libcodec2_mtk_venc \
+    libcodec2_soft_common-v31 \
+    libcodec2_vndk-v31 \
     libcodec2_vpp_dolby_plugin \
     libcodec2_vpp_dump_mtk_yuv_plugin \
     libcodec2_vpp_gc_plugin \
@@ -356,9 +362,11 @@ PRODUCT_PACKAGES += \
     librilfusion \
     librpc \
     librt_extamp_intf \
+    libsfplugin_ccodec_utils-v31 \
     libsn100u_fw \
     libspeech_enh_lib \
     libspeechparser_vendor \
+    libstagefright_bufferqueue_helper-v35 \
     libstorage_otp \
     libsysenv \
     libteeclientjni_isee \
