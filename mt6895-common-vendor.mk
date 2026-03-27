@@ -526,8 +526,6 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleRISCV \
     HotwordEnrollmentXGoogleRISCV \
     ImsService \
-    mediatek-common \
-    mediatek-framework \
     mediatek-ims-base \
     mediatek-ims-common \
     mediatek-ims-extension-plugin \
@@ -610,8 +608,6 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libpqpconfig_so
 
 PRODUCT_BOOT_JARS += \
-    mediatek-common \
-    mediatek-framework \
     mediatek-ims-base \
     mediatek-ims-common \
     mediatek-telecom-common \
