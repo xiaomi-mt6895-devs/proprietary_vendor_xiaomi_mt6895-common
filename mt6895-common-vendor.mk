@@ -268,7 +268,7 @@ PRODUCT_PACKAGES += \
     libdre \
     libfile_op \
     libforkexecwrap \
-    libformatter \
+    libformatter_mtk \
     libfvaudio \
     libged \
     libgpu_aux \
