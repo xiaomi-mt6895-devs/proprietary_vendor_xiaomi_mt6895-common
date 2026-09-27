@@ -216,7 +216,6 @@ PRODUCT_PACKAGES += \
     libaal_cust \
     libaal_key \
     libaal_mtk \
-    libaedv \
     libalsautils-v31 \
     libapu_mdw \
     libapu_mdw_batch \
@@ -292,7 +291,6 @@ PRODUCT_PACKAGES += \
     libjpeg-alpha-oal_vendor \
     libjpeg-alpha_vendor \
     libksensor \
-    libladder \
     libmfido_isee \
     libmipc \
     libmiresample \
@@ -367,7 +365,6 @@ PRODUCT_PACKAGES += \
     libthhclient \
     libtlcWidevineModularDrm \
     libtrm \
-    libudf \
     liburee_meta_drmkeyinstall \
     libvia-ril \
     libviagpsrpc \
