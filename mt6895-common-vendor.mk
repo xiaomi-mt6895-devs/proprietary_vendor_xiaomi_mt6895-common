@@ -285,8 +285,6 @@ PRODUCT_PACKAGES += \
     libhwm \
     libifcutils_mtk \
     libimsg_log \
-    libion_mtk \
-    libion_ulit \
     libjpeg-alpha-oal_vendor \
     libjpeg-alpha_vendor \
     libksensor \
