@@ -388,7 +388,7 @@ PRODUCT_PACKAGES += \
     libaiselector \
     libdpframework \
     libgamehdr \
-    libmnl \
+    libmnl_mtk \
     libmtk_drvb \
     libneuralnetworks_sl_driver_mtk_prebuilt \
     libneuron_adapter_mgvi \
@@ -578,7 +578,7 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libaiselector_so \
     vendor_lib64_libdpframework_so \
     vendor_lib64_libgamehdr_so \
-    vendor_lib64_libmnl_so \
+    vendor_lib64_libmnl_mtk_so \
     vendor_lib64_libmtk_drvb_so \
     vendor_lib64_libneuralnetworks_sl_driver_mtk_prebuilt_so \
     vendor_lib64_libneuron_adapter_mgvi_so \
