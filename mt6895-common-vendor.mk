@@ -200,6 +200,7 @@ PRODUCT_PACKAGES += \
     vulkan.mali \
     sensors.mediatek.V2.0 \
     sound_trigger.primary.default \
+    vendor.mediatek.hardware.bluetooth.audio@2.2-impl \
     vendor.mediatek.hardware.mms@1.6-impl \
     vendor.mediatek.hardware.nvram@1.1-impl \
     vendor.mediatek.hardware.videotelephony@1.0-impl \
@@ -235,6 +236,7 @@ PRODUCT_PACKAGES += \
     libaurisysdemo \
     libbessound_hd_mtk_vendor \
     libblisrc32_vendor \
+    libbluetooth_audio_session_mediatek \
     libbluetooth_mtk \
     libbluetooth_mtk_pure \
     libbt-vendor \
@@ -403,6 +405,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.apuware.apusys@2.1_vendor \
     vendor.mediatek.hardware.apuware.hmp@1.0_vendor \
     vendor.mediatek.hardware.apuware.utils@2.0_vendor \
+    vendor.mediatek.hardware.audio@6.1 \
     vendor.mediatek.hardware.audio@8.1 \
     vendor.mediatek.hardware.composer_ext@1.0 \
     vendor.mediatek.hardware.mmagent@1.0 \
