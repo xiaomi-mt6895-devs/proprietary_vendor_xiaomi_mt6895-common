@@ -139,6 +139,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/init.gps_scp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_scp.rc \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/init.vtservice_hidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vtservice_hidl.rc \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/init.wlan_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wlan_drv.rc \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/lbs_hidl_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lbs_hidl_service.rc \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/microtrust.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/microtrust.rc \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
@@ -205,6 +206,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.nvram@1.1-impl \
     vendor.mediatek.hardware.videotelephony@1.0-impl \
     jcos_nq_client-v1 \
+    lbs_hidl_service-impl \
     libDefaultFpsActor \
     libFrameRecord \
     libJpgEncPipe \
@@ -509,18 +511,20 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleRISCV \
     HotwordEnrollmentXGoogleRISCV \
     ImsService \
+    LPPeService \
     MtkGbaService \
     MtkTelephonyAssist \
-    mediatek-ims-base \
-    mediatek-telephony-base \
     com.android.hotwordenrollment.common.util \
+    mediatek-ims-base \
     mediatek-ims-extension-plugin \
+    mediatek-telephony-base \
     android.hardware.neuralnetworks-shim-service-mtk.xml \
     android.hardware.security.keymint-service.beanpod.xml \
     android.hardware.security.secureclock-service.beanpod.xml \
     android.hardware.security.sharedsecret-service.beanpod.xml \
     gnss-mtk.xml \
     gnss@2.1-service.xml \
+    lbs_hidl_service@1.0.xml \
     manifest.microtrust.xml \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
     manifest_apuware_apusys.xml \
@@ -549,6 +553,7 @@ PRODUCT_PACKAGES += \
     vendor.microtrust.hardware.soter@1.0-service \
     vendor.microtrust.hardware.thh@2.0-service \
     vtservice_hidl \
+    lbs_hidl_service \
     mlipayd_isee@1.1 \
     mnld \
     mtd_isee@1.3 \
@@ -586,5 +591,5 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libpqpconfig_so
 
 PRODUCT_BOOT_JARS += \
-    mediatek-ims-base \
-    mediatek-telephony-base
+    system_ext:mediatek-ims-base \
+    system_ext:mediatek-telephony-base

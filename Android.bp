@@ -1001,6 +1001,39 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "lbs_hidl_service-impl",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/lbs_hidl_service-impl.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libbase",
+                "libhardware",
+                "libbinder",
+                "libhidlbase",
+                "libhidltransport",
+                "libutils",
+                "vendor.mediatek.hardware.lbs@1.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libDefaultFpsActor",
     owner: "xiaomi",
     strip: {
@@ -10051,6 +10084,18 @@ android_app_import {
 }
 
 android_app_import {
+    name: "LPPeService",
+    owner: "xiaomi",
+    apk: "proprietary/system_ext/priv-app/LPPeService/LPPeService.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    system_ext_specific: true,
+}
+
+android_app_import {
     name: "MtkGbaService",
     owner: "xiaomi",
     apk: "proprietary/system_ext/priv-app/MtkGbaService/MtkGbaService.apk",
@@ -10075,22 +10120,6 @@ android_app_import {
 }
 
 dex_import {
-    name: "mediatek-ims-base",
-    owner: "xiaomi",
-    jars: [
-        "proprietary/system/framework/mediatek-ims-base.jar",
-    ],
-}
-
-dex_import {
-    name: "mediatek-telephony-base",
-    owner: "xiaomi",
-    jars: [
-        "proprietary/system/framework/mediatek-telephony-base.jar",
-    ],
-}
-
-dex_import {
     name: "com.android.hotwordenrollment.common.util",
     owner: "xiaomi",
     jars: [
@@ -10100,12 +10129,32 @@ dex_import {
 }
 
 dex_import {
+    name: "mediatek-ims-base",
+    owner: "xiaomi",
+    jars: [
+        "proprietary/system_ext/framework/mediatek-ims-base.jar",
+    ],
+    system_ext_specific: true,
+    use_generic_config: true,
+}
+
+dex_import {
     name: "mediatek-ims-extension-plugin",
     owner: "xiaomi",
     jars: [
         "proprietary/system_ext/framework/mediatek-ims-extension-plugin.jar",
     ],
     system_ext_specific: true,
+}
+
+dex_import {
+    name: "mediatek-telephony-base",
+    owner: "xiaomi",
+    jars: [
+        "proprietary/system_ext/framework/mediatek-telephony-base.jar",
+    ],
+    system_ext_specific: true,
+    use_generic_config: true,
 }
 
 prebuilt_etc_xml {
@@ -10157,6 +10206,15 @@ prebuilt_etc_xml {
     name: "gnss@2.1-service.xml",
     owner: "xiaomi",
     src: "proprietary/vendor/etc/vintf/manifest/gnss@2.1-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "lbs_hidl_service@1.0.xml",
+    owner: "xiaomi",
+    src: "proprietary/vendor/etc/vintf/manifest/lbs_hidl_service@1.0.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -10911,6 +10969,40 @@ cc_prebuilt_binary {
     },
     prefer: true,
     relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "lbs_hidl_service",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/lbs_hidl_service",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libbase",
+                "libhardware",
+                "libbinder",
+                "libhidlbase",
+                "libhidltransport",
+                "libutils",
+                "vendor.mediatek.hardware.lbs@1.0",
+                "lbs_hidl_service-impl",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
     soc_specific: true,
 }
 
